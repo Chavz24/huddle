@@ -5,12 +5,43 @@
     --pink: #ff52bf;
     --light-pink: 	#ff8fd8;
     --light-red: #ff4242;
-
     /*******
      NEUTRAL
      ********/
+    --very-dark-cyan: 	#00252e;
+    --very-pale-blue: #f5faff;
+}
 
-     --very-dark-cyan: 	#00252e;
-     --very-pale-blue: #f5faff;
-
+html {
+    font-size: 12px;
+}
+p, span, label, h6 {
+    font-size: 12px;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.6rem;
+}
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+    p, span, label, h6 {
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+    p, span, label, h6 {
+        font-size: 16px;
+    }
 }
