@@ -76,7 +76,7 @@ button:hover {
     }
 }
 .image img{
-    width: 250px;
+    width: 220px;
     height: auto;
 }
 #flowing-conversations,
@@ -254,8 +254,7 @@ input {
     .btn-footer {  
         float: right;
         margin-top: 1rem;
-    }
-    
+    }    
 }
 
 .fa-brands {
@@ -274,5 +273,3 @@ input {
 .fa-twitter-square:hover {
     color: var(--twitter-green);
 }
-
-/* COMMENT */
