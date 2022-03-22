@@ -59,19 +59,11 @@ h4 {
     margin:0;
     padding:0;
 }
-button {
+
+button  {
     border: none;
     outline: none;
-    background-color: var(--pink);
-    color: #f5faff;
-    padding: 1rem 4rem;
-    border-radius:  25px;
-    text-transform: capitalize;
-}
-
-button:hover {
-    background-color: var(--light-pink);
-}
+}   
 header {
     width: 100%;
     padding: 3rem 0;
@@ -409,6 +401,17 @@ section#grow-togheter > div {
     margin: 14rem auto;
     text-align: center;
 }
+.ready-btn {
+    background-color: var(--pink);  
+    color: #f5faff; 
+    padding: 1rem 4rem;
+    border-radius:  25px;
+    text-transform: capitalize;  
+}
+
+.ready-btn:hover {
+    background-color: var(--light-pink);
+}
 
 .bg-image {
 	overflow: hidden; 
@@ -492,9 +495,14 @@ input {
     width: 45%;
 }
 .btn-footer {
+    background-color: var(--pink);  
+    color: #f5faff; 
     border-radius: 6px;
     padding: 0.6rem 1rem;
     margin-left: 1.2rem;
+}
+.btn-footer:hover {
+    background-color: var(--light-pink);
 }
 
 @media only screen and (max-width: 600px) {
