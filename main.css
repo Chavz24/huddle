@@ -38,6 +38,8 @@ body {
 p, span, label, h6 {
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
+}
+.common-text-blue {
     color: var(--very-dark-cyan);
 }
 h2 {
@@ -337,7 +339,6 @@ section#grow-togheter > div {
     justify-content: space-around;   
 }
 
-
 #flowing-conversations {
     margin-bottom: 6rem;
 }
@@ -347,7 +348,6 @@ section#grow-togheter > div {
     background-color: var(--very-pale-blue);
     position: relative; 
 }
-
 
 #your-users::before {
     content: '';
