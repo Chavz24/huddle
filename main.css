@@ -50,8 +50,7 @@ h2 {
 h3 {
     font-size: 2rem;
     font-family: 'Poppins', sans-serif;
-    color: var(--very-dark-cyan);
-    /*text-transform: capitalize; REVISAR CHAVEZ*/
+    color: var(--very-dark-cyan);    
 }
 h4 {
     font-size: 1.2rem;
@@ -318,29 +317,52 @@ section#grow-togheter > div {
         align-items: center;
     }
 }
-
-.image img{
-    width: 220px;
-    height: auto;
+/* CHAVEZ */
+.section-title {
+    text-transform: capitalize;
 }
 #flowing-conversations,
 #your-users {
     display: flex;
     flex-direction: row;
-    padding: 6rem;
-    justify-content: space-around;   
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 100vh; 
 }
-
-#flowing-conversations {
-    margin-bottom: 6rem;
+#flowing-conversations > div, #your-users > div {
+    margin: 0 auto;
+    width: 50%;
+    height: auto;   
 }
-
+#flowing-conversations > .image, #your-users > .image {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display:flex;
+    justify-content: end;
+}
+#your-users > .image {
+    justify-content: start;
+}
+#flowing-conversations > .image > img, #your-users > .image > img {
+    width: 85%;
+    height: auto;
+}
+#flowing-conversations > .content, #your-users > .content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 #your-users  {
     flex-direction: row-reverse;
     background-color: var(--very-pale-blue);
     position: relative; 
 }
-
 #your-users::before {
     content: '';
     overflow: hidden;
@@ -364,38 +386,38 @@ section#grow-togheter > div {
     background-position:center top;
     width: 100%;
     height: 12rem;
-    margin-bottom: 4rem;
-        
-}
-#your-users > .image img{
-    float: right;
-
+    margin-bottom: 4rem;       
 }
 .content  p ,  .content h3 {
     text-align: justify;
     width: 22rem;  
-    margin: 0 2rem;
-          
+    margin: 1rem 2rem;        
 }
-
-
-
-
 @media only screen and (max-width: 600px) {
     #flowing-conversations,
     #your-users {   
         flex-direction: column;
         align-items: center;
     }
-    
-    .content  p ,  .content h3 {
-        text-align: center;
+    #flowing-conversations > .image, #your-users > .image {
+        justify-content: center;
+    }
+    #your-users > .image {
+        justify-content: center;
+    }
+    #flowing-conversations > .image > img, #your-users > .image > img {
+        width: 50%;
+        height: auto;
     }
 
-    
+    .content  p {
+        text-align: justify;
+        text-align-last: center;
+    }  
+    .content h3 { 
+        text-align: center;
+    }
 }
-
-
 #ready-to-build div {
     display: block;
     margin: 14rem auto;
@@ -408,11 +430,9 @@ section#grow-togheter > div {
     border-radius:  25px;
     text-transform: capitalize;  
 }
-
 .ready-btn:hover {
     background-color: var(--light-pink);
 }
-
 .bg-image {
 	overflow: hidden; 
     background-image: url("images/bg-footer-top-desktop.svg");
@@ -422,24 +442,18 @@ section#grow-togheter > div {
     width: 100%;
     height: 12rem;      
 }
-
-
-
 footer {
     color: white; 
     margin: 0;
     padding: 0;
-    border: none;
-      
+    border: none;      
 }
-
 .footer-info {
     display: flex;
     flex-direction: row;
     background-color: var(--very-dark-cyan);
     padding-bottom: 4rem;
 }
-
 .contact, .subscribe {
     margin-top: 6rem;
     width: 45%;
@@ -449,23 +463,16 @@ footer {
 }
 .subscribe {
     padding-left: 1rem;
-
 }
-
-
 @media only screen and (max-width: 600px) {
     .footer-info {
         flex-direction: column-reverse;
         align-items: center;     
     }  
-
     .contact, .subscribe {
         padding: 0%;
-    }
-    
+    }   
 }
-
-
 .footer-logo {
     background-color: #f5faff;
     width: 200px;
@@ -474,19 +481,16 @@ footer {
     padding: 0;
     margin:0;
 }
-
 .p-footer {
     font-size: 0.6rem;
     padding: 0;
     margin-top: 2rem;
     max-width: 20rem;   
 }
-
 .footer-info > div > p img {
     width: 14px;
     margin-right: 0.6rem;
 }
-
 input {
     margin-top: 2.6rem;
     border: none;
@@ -504,7 +508,6 @@ input {
 .btn-footer:hover {
     background-color: var(--light-pink);
 }
-
 @media only screen and (max-width: 600px) {
     input {
         width: 100%;
@@ -514,13 +517,11 @@ input {
         margin-top: 1rem;
     }    
 }
-
 .fa-brands {
     font-size: 2rem;
     margin-top: 2.6rem;
     margin-right: 0.4rem;
 }
-
 .fa-facebook-square:hover {
     color: var(--facebook-blue);
 }
