@@ -206,6 +206,14 @@ section#grow-togheter > div {
     p, span, label, h6 {
         font-size: 14px;
     }
+    section#welcome > div > div {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        column-gap: 20rem;
+        align-items: center;
+        justify-content: center;
+    }
 }
 @media only screen and (min-width: 1200px) {
     html {
@@ -253,6 +261,7 @@ section#grow-togheter > div {
     section#welcome > div > img {
         margin-bottom: 8rem;
     }
+  
     section#welcome > div > div {
         width: 60%;
         display: flex;
@@ -275,11 +284,11 @@ section#grow-togheter > div {
     div.center-content {
         width: 100%;
         height: 700px;
-        /* background-color: var(--very-pale-blue);
+        background-color: var(--very-pale-blue);
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center; */
+        justify-content: center;
     }
     div.center-content > div {
         width: 80%;
